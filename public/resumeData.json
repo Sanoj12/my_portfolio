@@ -1,0 +1,114 @@
+{
+  "main": {
+    "name": "Sanoj C Sam",
+    "occupation": "AI/ML DEVELOPER INTERN",
+    
+    "image": "profilepic.jpg",
+    "bio": "Hi there! I’m SANOJ. I’ve been coding for over 3 years and have hands-on experience in Machine Learning and AI. I’ve worked with startups to build Automated Recommendation Systems and have practical experience in Generative AI, Agentic AI, and Large Language Models (LLMs). I’m proficient in Python and skilled in developing RAG pipelines, AI chatbots, and ML models, with a strong passion for applying AI to solve real-world problems.",
+    "contactmessage": "Get in touch with me!",
+    "email": "sanojcsam123@gmail.com",
+    "phone": "+91 8921786185",
+    "address": {
+      "street": "Changancherry",
+      "city": "Kottayam",
+      "state": "Kerala",
+      "zip": "686546"
+    },
+    "website": "https://www.papareact.com/course",
+    "resumedownload": "https://github.com/Sanoj12/resume_host/blob/main/sanojcsam_resume.pdf",
+    "social": [
+     
+     
+      {
+        "name": "linkedin",
+        "url": "https://www.linkedin.com/in/sanoj-c-sam-1631aa158/",
+        "className": "fa fa-linkedin"
+      },
+     
+      {
+        "name": "github",
+        "url": "https://github.com/Sanoj12",
+        "className": "fa fa-github"
+      }
+    ]
+  },
+  "resume": {
+    "skillmessage": "My Programming Language Proficiency",
+    "education": [
+      {
+        "school": " Indira Gandhi National Open University (IGNOU)",
+        "degree": "Master of Computer Applications (MCA)",
+        "graduated": "October 2025",
+        "description": "Master's Degree, Computer Science"
+      }
+    ],
+    "work": [
+      {
+        "company": "Zecser Business LLP",
+        "title": "AI DEVELOPER INTERN",
+        "years": "August 2025 ",
+        "description": "Helped in building an Automated Recommendation System."
+      }
+    ],
+    "skills": [
+      
+      {
+        "name": "Python",
+        "level": "85%"
+      },
+      {
+        "name": "Machine Learning & Deep Learning",
+        "level": "70%"
+      },
+      {
+        "name": "Generative AI & NLP",
+        "level": "81%"
+      },
+      {
+        "name": "Agentic AI",
+        "level": "61%"
+      }
+    ]
+  },
+  "portfolio": {
+    "projects": [
+      {
+        "title": "Online-Examination-System-using-Python_Django ",
+        "category": "",
+        "image": "online_exam.jpg",
+        "url": "https://github.com/Sanoj12/Online-Examination-System-using--Python_Django"
+      },
+      {
+        "title": "AI-Audio-Transcript-App",
+        "category": "",
+        "image": "trancrib.jpg",
+        "url": "https://github.com/Sanoj12/AI-Audio-Transcript-App"
+      },
+      {
+        "title": "end-to-end-medical-chatbot ",
+        "category": "",
+        "image": "chatbot.jpg",
+        "url": "https://youtu.be/QaYts9sPmcY"
+      },
+      {
+        "title": "Agentic AI",
+        "category": "",
+        "image": "agentic ai.jpg",
+        "url": "https://github.com/Sanoj12/agentic-ai"
+      }
+    ]
+  },
+  "testimonials": {
+    "testimonials": [
+      {
+        "text": "Exploring Generative AI, LLMs, and RAG pipelines to innovate impactful solutions.",
+        "user": "Unknown"
+      },
+      {
+        "text": "Agentic AI: where intelligence meets action.",
+
+        "user": "Unknown"
+      }
+    ]
+  }
+}

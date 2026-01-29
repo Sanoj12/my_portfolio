@@ -5,27 +5,38 @@ const Contact = ({ data }) => {
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
+  const [status, setStatus] = useState("");
 
-  if (data) {
-    var contactName = data.name;
-    var street = data.address.street;
-    var city = data.address.city;
-    var state = data.address.state;
-    var zip = data.address.zip;
-    var phone = data.phone;
-    var contactEmail = data.email;
-    var contactMessage = data.contactmessage;
-  }
+  const submitForm = (e) => {
+    e.preventDefault();
+    setStatus("sending");
 
-  const submitForm = () => {
-    window.open(
-      `mailto:${contactEmail}?subject=${encodeURIComponent(
-        subject
-      )}&body=${encodeURIComponent(name)} (${encodeURIComponent(
-        email
-      )}): ${encodeURIComponent(message)}`
-    );
+    const formData = new FormData(e.target);
+
+    fetch("/", {
+      method: "POST",
+      body: formData,
+    })
+      .then(() => {
+        setStatus("success");
+        setName("");
+        setEmail("");
+        setSubject("");
+        setMessage("");
+      })
+      .catch(() => {
+        setStatus("error");
+      });
   };
+
+  const contactName = data?.name;
+  const street = data?.address?.street;
+  const city = data?.address?.city;
+  const state = data?.address?.state;
+  const zip = data?.address?.zip;
+  const phone = data?.phone;
+  const contactEmail = data?.email;
+  const contactMessage = data?.contactmessage;
 
   return (
     <section id="contact">
@@ -43,78 +54,86 @@ const Contact = ({ data }) => {
 
       <div className="row">
         <div className="eight columns">
-          <form onSubmit={submitForm}>
+          <form
+            name="contact"
+            method="POST"
+            data-netlify="true"
+            data-netlify-honeypot="bot-field"
+            onSubmit={submitForm}
+          >
+          
+            <input type="hidden" name="form-name" value="contact" />
+            <input type="hidden" name="bot-field" />
+
             <fieldset>
               <div>
-                <label htmlFor="contactName">
+                <label>
                   Name <span className="required">*</span>
                 </label>
                 <input
                   type="text"
-                  defaultValue=""
+                  name="name"
                   value={name}
-                  size="35"
-                  id="contactName"
-                  name="contactName"
                   onChange={(e) => setName(e.target.value)}
+                  required
                 />
               </div>
 
               <div>
-                <label htmlFor="contactEmail">
+                <label>
                   Email <span className="required">*</span>
                 </label>
                 <input
-                  type="text"
-                  defaultValue=""
+                  type="email"
+                  name="email"
                   value={email}
-                  size="35"
-                  id="contactEmail"
-                  name="contactEmail"
                   onChange={(e) => setEmail(e.target.value)}
+                  required
                 />
               </div>
 
               <div>
-                <label htmlFor="contactSubject">Subject</label>
+                <label>Subject</label>
                 <input
                   type="text"
-                  defaultValue=""
+                  name="subject"
                   value={subject}
-                  size="35"
-                  id="contactSubject"
-                  name="contactSubject"
                   onChange={(e) => setSubject(e.target.value)}
                 />
               </div>
 
               <div>
-                <label htmlFor="contactMessage">
+                <label>
                   Message <span className="required">*</span>
                 </label>
                 <textarea
-                  cols="50"
-                  rows="15"
+                  rows="10"
+                  name="message"
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
-                  id="contactMessage"
-                  name="contactMessage"
+                  required
                 ></textarea>
               </div>
 
               <div>
-                <button onClick={submitForm} type="submit" className="submit">
-                  Submit
+                <button type="submit" className="submit">
+                  {status === "sending" ? "Sending..." : "Submit"}
                 </button>
               </div>
+
+              {status === "success" && (
+                <div id="message-success">
+                  <i className="fa fa-check"></i> Your message was sent, thank you!
+                </div>
+              )}
+
+              {status === "error" && (
+                <div id="message-warning">
+                  Oops! Something went wrong. Try again.
+                </div>
+              )}
             </fieldset>
           </form>
-
-          <div id="message-warning"> Error boy</div>
-          <div id="message-success">
-            <i className="fa fa-check"></i>Your message was sent, thank you!
-            <br />
-          </div>
         </div>
 
         <aside className="four columns footer-widgets">

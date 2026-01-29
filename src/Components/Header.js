@@ -5,7 +5,7 @@ const Header = ({ data }) => {
     var name = data.name;
     var occupation = data.occupation;
     var description = data.description;
-    var city = data.address.city;
+    
     var networks = data.social.map(function (network) {
       return (
         <li key={network.name}>
@@ -67,7 +67,7 @@ const Header = ({ data }) => {
             {name ? `I'm ${name}.` : null}
           </h1>
           <h3>
-             <span>{occupation}</span>. {description}.
+            <span>{occupation}</span>. {description}.
           </h3>
           <hr />
           <ul className="social">{networks}</ul>

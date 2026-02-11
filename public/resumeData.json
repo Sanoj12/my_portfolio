@@ -40,7 +40,15 @@
         "degree": "Master of Computer Applications (MCA)",
         "graduated": "October 2025",
         "description": "Master's Degree, Computer Science"
+      },
+       {
+        "school": "Mahatma Gandhi University, Kerala",
+        "degree": "Bachelor  of Computer Applications (BCA)",
+        "graduated": "jun 2021",
+        "description": "Bachelor's Degree, Computer Science"
       }
+
+    
     ],
     "work": [
       {
@@ -95,6 +103,12 @@
         "category": "",
         "image": "agentic ai.jpg",
         "url": "https://github.com/Sanoj12/agentic-ai"
+      },
+       {
+        "title": "end-to-end-chatbot _project",
+        "category": "",
+        "image": "chatbot_1.jpg",
+        "url": "https://github.com/Sanoj12/medical-chatbot"
       }
     ]
   },

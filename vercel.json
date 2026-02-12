@@ -1,4 +1,5 @@
 {
+  "name": "sanoj-c-sam",
   "devCommand": "npm start",
   "buildCommand": "npm run build",
   "framework": "create-react-app",

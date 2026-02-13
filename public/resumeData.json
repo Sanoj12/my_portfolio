@@ -2,7 +2,6 @@
   "main": {
     "name": "Sanoj C Sam",
     "occupation": "AI/ML DEVELOPER INTERN",
-    
     "image": "sanoj.jpg",
     "bio": "Hi there! I’m SANOJ. I’ve been coding for over 3 years and have hands-on experience in Machine Learning and AI. I’ve worked with startups to build Automated Recommendation Systems and have practical experience in Generative AI, Agentic AI, and Large Language Models (LLMs). I’m proficient in Python and skilled in developing RAG pipelines, AI chatbots, and ML models, with a strong passion for applying AI to solve real-world problems.",
     "contactmessage": "Get in touch with me!",
@@ -17,14 +16,11 @@
     "website": "https://www.papareact.com/course",
     "resumedownload": "https://github.com/Sanoj12/resume_host/blob/main/sanojcsam_resume.pdf",
     "social": [
-     
-     
       {
         "name": "linkedin",
         "url": "https://www.linkedin.com/in/sanoj-c-sam-1631aa158/",
         "className": "fa fa-linkedin"
       },
-     
       {
         "name": "github",
         "url": "https://github.com/Sanoj12",
@@ -41,14 +37,12 @@
         "graduated": "October 2025",
         "description": "Master's Degree, Computer Science"
       },
-       {
+      {
         "school": "Mahatma Gandhi University, Kerala",
         "degree": "Bachelor  of Computer Applications (BCA)",
         "graduated": "jun 2021",
         "description": "Bachelor's Degree, Computer Science"
       }
-
-    
     ],
     "work": [
       {
@@ -59,7 +53,6 @@
       }
     ],
     "skills": [
-      
       {
         "name": "Python",
         "level": "85%"
@@ -104,10 +97,16 @@
         "image": "agentic ai.jpg",
         "url": "https://github.com/Sanoj12/agentic-ai"
       },
-       {
+      {
         "title": "end-to-end-chatbot _project",
         "category": "",
         "image": "chatbot_1.jpg",
+        "url": "https://github.com/Sanoj12/medical-chatbot"
+      },
+      {
+        "title": "end-to-end-machine-learning-project Student Performance Prediction",
+        "category": "",
+        "image": "student.png",
         "url": "https://github.com/Sanoj12/medical-chatbot"
       }
     ]
@@ -120,7 +119,6 @@
       },
       {
         "text": "Agentic AI: where intelligence meets action.",
-
         "user": "Unknown"
       }
     ]
